@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+  <div id="wrapper">
+    <div class="container">
+        <!-- navbar start -->
+        <nav>
+         <div class="logo-container">
+            <img src="data:image/png;base64,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" style="width: 80px;">
+            <div class="logo-text">ahil Gupta</div>
+         </div>
+
+         <div class="nav-items">
+            <a href="projects" >projects</a>
+            <a href="skills">skills</a>
+            <a href="contact me">contact me</a>
+         </div>
+        </nav>
+        <!-- navbar ends -->
+
+        <!-- hero section start -->
+        <section>
+            <div class="faded-text">sahil gupta</div>
+            <div class="hero-section-left">
+                <h1 style="font-size:35px;font-weight: 500;color:#343d68">hi! sahil</h1>
+                <h1 class="hero-section-subheading" >i am a
+                    <span class="role" ></span>
+                </h1>
+              <div class="hero-section-description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda recusandae modi qui doloribus pariatur sit voluptatibus facilis debitis vero eaque!</div>
+                <button class="button">hire me</button>
+            </div>
+
+
+
+            <div class="hero-section-right">
+                <div class="icon-dots absolute">
+                    <img src="./portfolio-website/images/userAsset/dots.png"alt=>
+                </div>
+                <div class="icon-cube  absolute">
+                    <img src="./portfolio-website/images/userAsset/cube.png"alt=>
+                </div>
+                <div class="icon-circle  absolute">
+                    <img src="./portfolio-website/images/userAsset/circle.png"alt=>
+                </div>
+                <div class="icon-zigzag  absolute ">
+                    <img src="./portfolio-website/images/userAsset/zigzags.png"alt=>
+                </div>
+                <div class="icon-plus  absolute">
+                    <img src="./portfolio-website/images/userAsset/plus.png" alt="">
+                </div>
+                <div class="user-image  ">
+                    <img src="./portfolio-website/images/userAsset/WhatsApp Image 2023-02-09 at 12.15.17 AM.jpeg" alt="" width="250px" height="350px">
+                </div>
+            </div>
+        
+        </section>
+    </div>    
+        <!-- hero section ends -->
+
+
+
+        <!-- project section start -->
+      <div class="project-section">
+        <h2 class="heading">Projects</h2>
+        <div class="project-container">
+        <div class="card" id="project1">
+          <div class="project-number">01</div>
+          <div class="project-content">
+            <div class="project-skills-container">
+              <img src="./portfolio-website/images/stack/HTML.png" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/CSS.png" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/Javascript.svg" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/Express.png" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/NextJsCircle.png" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/Tailwind.png" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/NodeJs.svg" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/NodeJs.svg" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/MongoDB.svg" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/Redux.svg" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/Vercel.svg" alt="" class="project-slill">
+            </div>
+            <h2 class="project-heading">TINT & ORANGE</h2>
+            <div class="project-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sequi laudantium optio eveniet quae quaerat excepturi praesentium magnam. Asperiores, possimus!</div>
+            <button class="button">hire me</button>
+
+
+
+          </div>
+        </div>
+        <div class="card" id="project2">
+          <div class="project-number">01</div>
+          <div class="project-content">
+            <div class="project-skills-container">
+              <img src="./portfolio-website/images/stack/HTML.png" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/CSS.png" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/Javascript.svg" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/Express.png" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/NextJsCircle.png" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/Tailwind.png" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/NodeJs.svg" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/NodeJs.svg" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/MongoDB.svg" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/Redux.svg" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/Vercel.svg" alt="" class="project-slill">
+            </div>
+            <h2 class="project-heading">TINT AND ORANGE</h2>
+            <div class="project-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sequi laudantium optio eveniet quae quaerat excepturi praesentium magnam. Asperiores, possimus!</div>
+            <button class="button">hire me</button>
+            <!-- <img src="./portfolio-website/images/projects/Project1.png" alt="">
+            <img src="./portfolio-website/images/projects/Project2.png" alt="">
+            <img src="./portfolio-website/images/projects/Project3.png" alt="">
+            <img src="./portfolio-website/images/projects/Project4.png" alt=""> -->
+
+
+          </div>
+        </div>
+        <div class="card" id="project3">
+          <div class="project-number">01</div>
+          <div class="project-content">
+            <div class="project-skills-container">
+              <img src="./portfolio-website/images/stack/HTML.png" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/CSS.png" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/Javascript.svg" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/Express.png" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/NextJsCircle.png" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/Tailwind.png" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/NodeJs.svg" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/NodeJs.svg" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/MongoDB.svg" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/Redux.svg" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/Vercel.svg" alt="" class="project-slill">
+            </div>
+            <h2 class="project-heading">TINT AND ORANGE</h2>
+            <div class="project-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sequi laudantium optio eveniet quae quaerat excepturi praesentium magnam. Asperiores, possimus!</div>
+            <button class="button">hire me</button>
+            <!-- <img src="./portfolio-website/images/projects/Project1.png" alt="">
+            <img src="./portfolio-website/images/projects/Project2.png" alt="">
+            <img src="./portfolio-website/images/projects/Project3.png" alt="">
+            <img src="./portfolio-website/images/projects/Project4.png" alt=""> -->
+
+
+          </div>
+        </div>
+        <div class="card" id="project4">
+          <div class="project-number">04</div>
+          <div class="project-content">
+            <div class="project-skills-container">
+              <img src="./portfolio-website/images/stack/HTML.png" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/CSS.png" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/Javascript.svg" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/Express.png" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/NextJsCircle.png" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/Tailwind.png" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/NodeJs.svg" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/NodeJs.svg" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/MongoDB.svg" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/Redux.svg" alt="" class="project-slill">
+              <img src="./portfolio-website/images/stack/Vercel.svg" alt="" class="project-slill">
+            </div>
+            <h2 class="project-heading">TINT AND ORANGE</h2>
+            <div class="project-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sequi laudantium optio eveniet quae quaerat excepturi praesentium magnam. Asperiores, possimus!</div>
+            <button class="button">hire me</button>
+
+
+
+          </div>
+        </div>
+
+        </div>
+      </div>
+        <!-- project section ends -->
+
+
+<!-- skill section start -->
+<div id="skills" class="container skills-container">
+
+    <div class="skill-fade-text">Skills</div>
+
+
+    <div class="skill-container-left">
+      <h2 class="skill-heading">
+        <span class="caps">M</span>e and 
+    </br>
+    My Tech Stack
+  </h2>
+  <div class="skill-subheading">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio consequatur nesciunt amet ratione veniam aliquid quis omnis ut! Facilis, repudiandae ipsum. Voluptatibus nam dolor, aut fugit officiis facilis hic alias at et delectus explicabo impedit. Sint repellat odio numquam libero!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cumque beatae, illo alias labore veniam pariatur nobis eaque molestias voluptatum sunt repellat quasi nam assumenda accusantium itaque facere repudiandae sed, minus aut blanditiis. Libero maiores animi odio. Ab, exercitationem sit!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, sit obcaecati voluptatum modi incidunt quibusdam sed. Excepturi molestiae asperiores tempora!
+    </p>
+  </div>
+</div>
+
+  <div class="skill-container-right">
+    <img src="./portfolio-website/images/userAsset/blob vector.png" class="blob-style" alt="" />
+
+    <img src="./portfolio-website/images/stack/HTML.png" alt="" class="skills-logo" />
+    <img src="./portfolio-website/images/stack/CSS.png" alt="" class="skills-logo" />
+    <img src="./portfolio-website/images/stack/Javascript.svg" alt="" class="skills-logo" />
+    <img src="./portfolio-website/images/stack/React.png" alt="" class="skills-logo" />
+    <img src="./portfolio-website/images/stack/NodeJs.svg" alt="" class="skills-logo" />
+    <img src="./portfolio-website/images/stack/Next.svg" alt="" class="skills-logo" />
+    <img src="./portfolio-website/images/stack/Redux.svg" alt="" class="skills-logo" />
+    <img src="../portfolio-website/images/stack/Tailwind.png" alt="" class="skills-logo" />
+    <img src="./portfolio-website/images/stack/Bootstrap.svg" alt="" class="skills-logo" />
+    <img src="./portfolio-website/images/stack/MaterialUI.svg" alt="" class="skills-logo" />
+    <img src="./portfolio-website/images/stack/Express.png" alt="" class="skills-logo" />
+    <img src="./portfolio-website/images/stack/Git.svg" alt="" class="skills-logo" />
+    <img src="./portfolio-website/images/stack/Github.svg" alt="" class="skills-logo" />
+    <img src="./portfolio-website/images/stack/Graphql.svg" alt="" class="skills-logo" />
+    <img src="./portfolio-website/images/stack/MongoDB.svg" alt="" class="skills-logo" />
+    <img src="./portfolio-website/images/stack/Vercel.svg" alt="" class="skills-logo" />
+    <img src="./portfolio-website/images/stack/ChartJs.svg" alt="" class="skills-logo" />
+    <img src="./portfolio-website/images/stack/Bash.svg" alt="" class="skills-logo" />
+    <img src="./portfolio-website/images/stack/Docker.svg" alt="" class="skills-logo" />
+    <img src="./portfolio-website/images/stack/K8s.svg" alt="" class="skills-logo" />
+  </div>
+</div>
+<!-- skill section ends -->
+
+
+
+<!-- contact me start -->
+<div class="contactus-form-container">
+  <div class="container">
+    <h1 class="contactus-heading">Contact Me</h1>
+    <h3 class="contactus-subheading">hey guys lets talk</h3>
+
+    <div class="contactus-form-container">
+      <form action="" class="form">
+        <div class="formfield-container">
+          <input class="formfield" type="text" name="name" id="" placeholder="enter your name">
+          <input class="formfield" type="email" name="email" id="" placeholder="enter your email">
+          <input class="formfield" type="text" name="subject" id="" placeholder="enter your subject">
+          <textarea class="formfield formfeild-textarea" type=""  id="" placeholder="enter your message" cols="30" rows="10"></textarea>
+        </div>
+        <button class="button"> submit here</button>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- contact me ends -->
+
+
+<!-- footer starts -->
+<div class="footer">
+  <div class="footer-container">
+  <div class="footer-left">
+  <div class="footer-heading">MY profile</div>
+  <div class="footer-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nulla praesentium ea ut consequuntur. Unde commodi dignissimos pariatur temporibus obcaecati.</div>
+  </div>
+
+  <div class="footer-right">
+    <div class="footer-right-right">
+    <div class="footer-project1">
+      <h1 style="color: rgb(231, 52, 52) ;" >project1</h1>
+      <p style="color: white;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores commodi nostrum distinctio sunt, dolor beatae. Esse ea consequuntur ipsam blanditiis.</p>
+     </div>
+    <div class="footer-project2">
+      <h1  style="color: red" >project2</h1>
+      <p style="color: white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores commodi nostrum distinctio sunt, dolor beatae. Esse ea consequuntur ipsam blanditiis.</p>
+    </div>
+    <div class="footer-project3">
+      <h1  style="color: red">Project3</h1>
+      <p  style="color: white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores commodi nostrum distinctio sunt, dolor beatae. Esse ea consequuntur ipsam blanditiis.</p>
+    </div>
+   
+  </div>
+  <div class="footer-base">All Right Reserved Conceptial 2023</div>
+</div>
+</div>
+
+</div>
+
+<!-- footer ends -->
+
+
+</div>
+    </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+  <script>
+    var typeData = new Typed(".role", {
+      strings: [
+        "Full Stack Developer",
+        "Web Developer",
+        "UI-UX Designer",
+        "Backend Developer",
+        "Coder",
+      ],
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 80,
+      backDelay: 1000,
+    });
+  </script>
+</body>
+</html>
